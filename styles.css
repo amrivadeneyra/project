@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #ddd;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.transaction-input {
+  margin-bottom: 20px;
+}
+
+.transaction-input input {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #444;
+  border: none;
+  color: #ddd;
+  border-radius: 20px; /* Bordado redondeado */
+  transition: background-color 0.3s ease;
+}
+
+.transaction-input input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.transaction-input button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00bcd4, #ffeb3b);
+  border: none;
+  color: #000;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.transaction-input button:hover {
+  background: linear-gradient(135deg, #00e5ff, #ffd600);
+}
+
+.blockchain {
+  border: 1px solid #444;
+  padding: 20px;
+  background-color: #333;
+}
+
+.blockchain h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#blockchain-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#blockchain-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#blockchain-list li:hover {
+  background-color: #555;
+}
+
+.block {
+  display: inline-block;
+  background: linear-gradient(135deg, #00bcd4, #ff4081);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+#blockchain-list li:hover .block {
+  transform: scale(1.1);
+}
